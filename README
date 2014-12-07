@@ -1,0 +1,13 @@
+
+Author: Logan Clarke
+Memory: Assignment # 4
+Purpose: The purpose of this program is to simulate computer memory.
+It contains functions to store and retrieve ints to and from memory
+locations as well as a funtion to copy a block of memory to another 
+location and a funtion to dump with contents of a specified block of
+memory.
+
+
+Comments:The code runs great but valgrind says there is a memory error even though
+it also states there is no leaks possible. I wasn't able to work out what the memory error was
+
