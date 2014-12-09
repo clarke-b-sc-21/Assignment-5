@@ -1,13 +1,26 @@
-
 Author: Logan Clarke
-Memory: Assignment # 4
+Memory: Assignment # 5
 Purpose: The purpose of this program is to simulate computer memory.
 It contains functions to store and retrieve ints to and from memory
-locations as well as a funtion to copy a block of memory to another 
+locations as well as a funtion to copy a block of memory to another
 location and a funtion to dump with contents of a specified block of
-memory.
+memory. This one includes a series of overloaded operators to add 
+together, assign one memory to equal another, check if two memory 
+equal eachother, and output a memory with cout.
 
 
-Comments:The code runs great but valgrind says there is a memory error even though
-it also states there is no leaks possible. I wasn't able to work out what the memory error was
 
+Comments: Its working with all the funtions except the overloaded [] operator where 
+we are supposed to be able to use that to store a value in a memory location.
+My problem with it was that i couldnt figure out how to access the value to be assigned to 
+the location since making the operator overloading funtion only seemed to give me access
+to the memory being accessed and the location where i was to put the value
+
+Also it works with my driver but will likely crash with yours, i found my overloaded
+assignment operator will only work if i am assigning one memory to another memory that
+already exists. So it wont work for memory c = a; but will work for memory c; c=a; 
+
+Lastly, my .h file worked good with code block but the compiler here at the college is complain
+about it :/
+
+Aside from that I think my funtions work good. 

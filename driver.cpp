@@ -11,15 +11,26 @@ int main (void) {
 
 memory m1(25);
 for ( int i=0; i < 25; i++) m1.store(i,i);
+memory m2(35);
+for ( int i=0; i < 35; i++) m2.store(i,3);
 
-m1.dump(0,14);
+memory m3;
+m3=m1;
+m3 = m1 + m2;
+m2=m1;
 
-m1.copy(0,0,4);
-m1.copy(0,4,10);
-m1.copy(0,4,20);
+//m1[1]=5;
 
 
+m2.store(20,99);
+int x =m2[20];
+
+cout<< "This is x: "<<x<<endl;
+if ( m1 == m2 ) cout << " m1 is equal to m2";
+      else cout << " m1 is not equal to m2";
 m1.dump();
+m2.dump();
+cout<<m3;
 cout<<"This is value at location 22: " << m1.retrieve(22) <<endl;
 }
 
