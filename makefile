@@ -12,4 +12,4 @@ clean:
 	rm *.o mem
 	
 
-
+ 
